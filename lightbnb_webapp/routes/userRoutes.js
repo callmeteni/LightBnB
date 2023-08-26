@@ -73,12 +73,12 @@ router.post("/", (req, res) => {
 router.post("/login", (req, res) => {
   const email = req.body.email;
   const password = req.body.password;
-
+  console.log(req.body, "This is an error fro user routes");
   database.getUserWithEmail(email).then((user) => {
     if (!user) {
       return res.send({ error: "no user with that id" });
     }
-
+    console.log("This is the pass", user)
     if (!bcrypt.compareSync(password, user.password)) {
       return res.send({ error: "error" });
     }
