@@ -56,3 +56,6 @@ pages via SOL aueries.
 * `routes` contains the router files which are responsible for any HTTP requests to `/users/something` or `/api/something`. 
 * `styles` contains all of the sass files. 
 * `server.js` is the entry point to the application. This connects the routes to the database.
+
+!["Home Page"](https://github.com/callmeteni/LightBnB/blob/master/lightbnb_webapp/docs/Homepage.png)
+!["Add new Listing"](https://github.com/callmeteni/LightBnB/blob/master/lightbnb_webapp/docs/add%20new%20listing.png)
